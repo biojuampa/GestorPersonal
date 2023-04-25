@@ -122,7 +122,7 @@ STATIC_URL = "static/"
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
-    "www.pythonanywhere.com" / 'static',
+    '/var/www/static/',
 ]
 
 # Default primary key field type
