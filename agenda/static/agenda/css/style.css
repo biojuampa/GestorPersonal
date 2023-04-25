@@ -1,0 +1,48 @@
+* {
+  color: forestgreen;
+}
+
+th {
+  text-align: left;
+}
+
+a {
+/*  color: green; */
+  text-decoration: none;
+  font-style: italic;
+}
+
+.contact_list img {
+  vertical-align: middle;
+  margin: 0 20px 10px 50px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid green;
+  border-radius: 25px;
+}
+
+.contact_list {
+  width: 350px;
+/*  color: green; */
+}
+
+.remove {
+  color: red;
+  float: right;
+}
+
+.search {
+  margin: 20px 5px;
+  border-radius: 5px;
+  border: 1px solid green;
+}
+
+.label-search {
+/*  color: green; */
+  margin-left: 50px;
+}
+
+aside h1 {
+  font-style: italic;
+  margin: 20px 0 0 120px;
+} 

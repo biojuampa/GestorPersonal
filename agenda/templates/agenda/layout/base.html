@@ -1,0 +1,39 @@
+{% extends 'layout/base.html' %}
+
+{% load static %}
+
+{% comment %}
+
+Plantilla BASE de la app Agenda:
+
+  Aquí debería colocar la estructura básica con la
+  cual deseo representar los datos de los contactos
+  y la lista de los mismos. Por ejemplo una barra
+  lateral (aside) y en el cuerpo principal presentar
+  los datos (formularios p.e.).
+
+{% endcomment %}
+
+{% block title %}Agenda{% endblock %}
+
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'agenda/css/style.css' %}">
+{% endblock %}
+
+{% block content %}
+
+  <aside>
+    <h1>Contactos</h1>
+  
+    {% include 'agenda/layout/partials/search_field.html' %}
+    {% include 'agenda/layout/partials/contacts.html' %}
+  
+  <aside>
+  
+  <main>
+    {% block main %}{% endblock %}  
+  </main>
+
+
+{% endblock %}
+

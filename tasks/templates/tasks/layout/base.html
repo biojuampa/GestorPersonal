@@ -1,0 +1,30 @@
+{% extends 'layout/base.html' %}
+
+{% load static %}
+
+{# Plantilla BASE de la app Tasks #}
+
+{% block title %}Tareas{% endblock %}
+
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'tasks/css/style.css' %}">
+{% endblock %}
+
+{% block content %}
+  <hr>
+  <aside>
+    <h1>
+      Tareas
+      <a href="{% url 'task_create' %}">
+        [+]
+      </a>
+    </h1>
+    {% include 'tasks/layout/partials/tasks_list.html' %}
+    <br>
+  </aside>
+  <hr>  
+  <main>
+    {% block main %}{% endblock %}
+  </main>
+  <hr>
+{% endblock %}

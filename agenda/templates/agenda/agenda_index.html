@@ -1,0 +1,26 @@
+{% extends 'agenda/layout/base.html' %}
+
+{% block main %}
+  <h1>Agregar Nuevos Datos</h1>
+  <hr>
+  <p>
+    <a href="{% url 'contact_new' %}">+</a>
+    <a href="{% url 'contact_new' %}">New Contact</a>
+  </p>
+  <p>
+    <a href="{% url 'zipcode_new' %}">+</a>
+    <a href="{% url 'zipcode_new' %}">New Zip Code</a>
+  </p>
+  <p>
+    <a href="{% url 'location_new' %}">+</a>
+    <a href="{% url 'location_new' %}">New Location</a>
+  </p>
+  <p>
+    <a href="{% url 'job_new' %}">+</a>
+    <a href="{% url 'job_new' %}">New Job</a>
+  </p>
+  <p>
+    <a href="{% url 'group_new' %}">+</a>
+    <a href="{% url 'group_new' %}">New Group</a>
+  </p>
+{% endblock %}

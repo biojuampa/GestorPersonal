@@ -1,0 +1,9 @@
+{% for contact in contact_list %}
+  <div class="contact_list">
+    <img src="{{ contact.photo.url }}">
+    <a href="{% url 'contact_detail' pk=contact.pk %}">
+      {{ contact }}
+    </a>
+    <a href="{% url 'contact_remove' pk=contact.pk %}" class="remove">x</a>
+  </div>
+{% endfor %}

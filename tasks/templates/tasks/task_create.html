@@ -1,0 +1,17 @@
+{% extends 'tasks/layout/base.html' %}
+
+{% block main %}
+  <h3><u>Crear nueva <i>Tarea</i></u><h3>
+
+  <form method="POST">
+    {% csrf_token %}
+
+    <table>
+      {{ task_form.as_table }}
+    </table>
+
+    <input type="submit" value="Guardar">
+    <input type="reset" value="Limpiar">
+  </form>
+
+{% endblock %}

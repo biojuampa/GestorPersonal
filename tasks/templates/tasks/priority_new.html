@@ -1,0 +1,20 @@
+{% extends 'tasks/layout/base.html' %}
+
+{% block main %}
+  <h2>Nueva Prioridad</h2>
+  
+  <form method="POST">
+
+    {% csrf_token %}
+
+    <label>
+      Nivel: <input type="text" name="priority">
+    </label>
+
+    <input type="submit" value="Guardar">
+    <a href="{% url 'tasks_index' %}">
+      <input type="button" value="Cancelar">
+    </a>
+
+  </form>
+{% endblock %}

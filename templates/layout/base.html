@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+{% comment %}
+
+Plantilla BASE del proyecto:
+
+  Esta es la plantilla base por excelencia. Esta
+  plantilla contiene la estructura html básica y
+  es la única que la posee. Todas las demás heredan
+  de esta plantilla y subplantillas heredadas de esta.
+
+{% endcomment %}
+
+<html lang=es>
+
+  <head>
+    <title>
+      Gestor Personal | {% block title %}{% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block styles %}{% endblock %}
+  </head>
+
+  <body>
+    <header>
+      {% include 'layout/partials/menu.html' %}
+    </header>
+    
+    {% block content %}{% endblock %}
+    
+    <footer>
+      {% include 'layout/partials/footer.html' %}
+    </footer>
+    
+    {% block scripts %}{% endblock %}
+  </body>
+
+</html>

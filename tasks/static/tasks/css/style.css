@@ -1,0 +1,27 @@
+* {
+  color: royalblue;
+}
+
+th {
+  text-align: left;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+}
+
+h1 a {
+    font-style: normal;
+    font-weight: lighter;
+}
+
+.task_description {
+    font-style: italic;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+}

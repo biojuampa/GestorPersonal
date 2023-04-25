@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang=es>
+
+  <head>
+    <title>New Zip Code</title>
+  </head>
+  
+  <body>
+    <h3>New Zip Code</h3>
+    <form method="POST">
+      {% csrf_token %}
+      <table>
+        {{ zipcode_form.as_table }}
+      </table>
+      <input type="submit">
+    </form>
+  </body>
+
+</html>
+

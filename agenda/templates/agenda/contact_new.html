@@ -1,0 +1,24 @@
+{% extends 'agenda/layout/base.html' %}
+
+{% block main %}
+  <h1>Agregar Nuevo Contacto</h1>
+  <hr>
+  <form enctype="multipart/form-data" action="{% url 'contact_new' %}" method="POST">
+    
+    {% csrf_token %}
+
+    <h3>Datos del contacto</h3>
+    <table>
+      
+      {{ contact_form.as_table }}
+      
+      <tr>
+        <td align="right">
+            <input type="reset" value="Borrar">
+            <input type="submit" value="Guardar">
+        </td>
+      </tr>
+    
+    </table>
+  </form>
+{% endblock %}

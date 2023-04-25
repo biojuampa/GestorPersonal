@@ -1,0 +1,12 @@
+{% extends 'tasks/layout/base.html' %}
+
+{% block main %}
+  <h3>Agregar Nuevo</h3>
+  <hr>
+  <p>
+    <a href="{% url 'task_create' %}">+ Nueva Tarea</a>
+  </p>
+  <p>
+    <a href="{% url 'priority_new' %}">+ Nueva Prioridad</a>
+  </p>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'tasks/layout/base.html' %}
+
+{% block main %}
+  <h3>Modificar <b>Tarea</b><h3>
+
+  <form method="POST">
+    {% csrf_token %}
+
+    <table>
+      {{ task_form.as_table }}
+    </table>
+
+    <input type="submit" value="Modificar">
+    <a href="{% url 'task_detail' pk=task.pk%}">
+      <input type="button" value="Cancelar">
+    </a>
+  </form>
+
+{% endblock %}

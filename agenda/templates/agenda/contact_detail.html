@@ -1,0 +1,16 @@
+{% extends 'agenda/layout/base.html' %}
+
+{% block main %}
+
+  <h3>Datos del contacto</h3>
+  
+  <div class="contact_list">
+    <img src="{{ contact.photo.url }}">
+    {{ contact }}
+  </div>
+  
+  <table>
+    {{ contact_form.as_table }}      
+  </table>
+
+{% endblock %}
