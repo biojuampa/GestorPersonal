@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-b!$^0+f&&t=#6lt6tfz_%_b0cu(=4jlur@1^61(aqc74&abln4"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['.pythonanywhere.com']
+ALLOWED_HOSTS = ['gestor.pythonanywhere.com']
 
 
 # Application definition
@@ -119,8 +119,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "/static/"
-
 STATIC_ROOT = BASE_DIR / 'static'
+
+# Imágenes subidas por el usuario
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 #STATICFILES_DIRS = [
 #    BASE_DIR / 'static',
@@ -132,6 +135,3 @@ STATIC_ROOT = BASE_DIR / 'static'
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# Imágenes subidas por el usuario
-#MEDIA_ROOT = BASE_DIR / 'media'
-#MEDIA_URL = '/media/'
