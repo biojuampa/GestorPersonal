@@ -91,7 +91,9 @@ DATABASES = {
         'PASSWORD': '3?_3j>~ADSKe=mm',
         'HOST': 'gestor.mysql.pythonanywhere-services.com',
         'PORT': '3306',
-        'sql_mode': 'STRICT_ALL_TABLES',
+        'OPTIONS': {
+            'sql_mode': 'STRICT_ALL_TABLES',
+        },
     }
 }
 
